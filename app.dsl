@@ -7,7 +7,7 @@ multibranchPipelineJob("App") {
   branchSources {
       git {
         credentialsId("github_ssh")
-        remote("ssh://git@github.com:amit242/app.git")
+        remote("git@github.com:amit242/app.git")
       }
   }
   orphanedItemStrategy {
