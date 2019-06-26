@@ -6,7 +6,7 @@ multibranchPipelineJob("App") {
   }
   branchSources {
       git {
-        credentialsId("gitlab_ssh")
+        credentialsId("github_ssh")
         remote("ssh://git@github.com:amit242/app.git")
       }
   }
