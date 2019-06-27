@@ -10,6 +10,9 @@ multibranchPipelineJob("App") {
         remote("git@github.com:amit242/app.git")
       }
   }
+  triggers {
+    periodic(5)
+  }
   orphanedItemStrategy {
     discardOldItems {
       numToKeep(5)
